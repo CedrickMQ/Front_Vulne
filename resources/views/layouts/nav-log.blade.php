@@ -26,15 +26,12 @@
         </style>
     </head>
 
-    <body class="bg-gray-500 overflow-x-hidden">
+    <body class="bg-gray-500 overflow-hidden">
 
-    <header class="bg-indigo-950 flex text-neutral-200">
+    <header class="w-screen absolute bg-indigo-950 flex text-neutral-200">
         <div class="h-12 w-1/3 py-3 px-2 font-semibold">
-            <a href="Login">
-                <p>Acceso</p>            
-            </a>
+            <p>Acceso</p>            
         </div>
-        
         <div class="h-12 w-1/3 grid place-content-center">
             <img class="w-[67px]" src="{{URL::asset('images/logo_bbva_blanco.png')}}">
         </div>
@@ -44,9 +41,9 @@
 
     </header>
 
-    @yield('Nav-Bar')
+    @yield('Nav-Login')
 
-    <footer class="bg-indigo-950 h-96">
+    {{-- <footer class="bg-indigo-950 h-96">
         <div class="py-12 grid place-content-center">
             <img class="w-32" src="{{URL::asset('images/logo_bbva_blanco.png')}}">
         </div>
@@ -77,7 +74,7 @@
         <div class="grid place-content-center font-semibold text-cyan-400 pt-6">
             <p> Creando oportunidades </p>
         </div>
-    </footer>
+    </footer> --}}
 
     </body>
 </html>
